@@ -55,19 +55,49 @@ Confident + Wrong    → ZERO reward              ← hallucination, crushed
 
 ## Why This Matters
 
-### Real-World Impact
+### The $100B Hallucination Problem
 
-| Domain | Problem Without Calibration | With Calibration |
-|--------|---------------------------|------------------|
-| **Medical AI** | Model confidently suggests wrong diagnosis | Model flags uncertainty, defers to doctor |
-| **Legal AI** | Fabricates case citations with full confidence | Says "I'm not sure this citation exists" |
-| **Education** | Teaches students incorrect facts authoritatively | Indicates when information may be incomplete |
-| **Code Generation** | Generates buggy code without warning | Warns "this approach might have edge cases" |
-| **Search/RAG** | Returns hallucinated answers as top results | Returns "I don't have enough information" |
+Hallucination is the single biggest barrier to enterprise AI adoption. A 2024 Gartner report estimated that **over 30% of generative AI projects will be abandoned** due to trust issues stemming from hallucination. Companies deploying LLMs in production — from healthcare to finance to legal — face a fundamental question: *how do you trust a system that doesn't know what it doesn't know?*
+
+The answer isn't making models smarter. It's making them **honest**.
+
+### Real-World Applications
+
+| Domain | Problem Without Calibration | With Calibration | Stakes |
+|--------|---------------------------|------------------|--------|
+| **Medical Diagnosis** | Model confidently suggests wrong diagnosis, doctor trusts it | Model flags uncertainty, defers to doctor for edge cases | Patient lives |
+| **Legal Research** | Fabricates case citations with full confidence (documented in real lawsuits) | Says "I'm not sure this citation exists — please verify" | Court sanctions, malpractice |
+| **Autonomous Vehicles** | Perception model is 60% sure but reports 95% — car doesn't brake | Model reports true uncertainty — system triggers safe fallback | Road safety |
+| **Financial Advisory** | Confidently recommends trades based on hallucinated market data | Flags "my information may be outdated" on volatile topics | Portfolio losses |
+| **Education & Tutoring** | Teaches students incorrect facts with authority | Says "I think this is right but you should double-check" | Learning outcomes |
+| **Code Generation** | Generates buggy code without warning, developer ships it | Warns "this approach might have edge cases I'm not sure about" | Production outages |
+| **Search & RAG** | Returns hallucinated answers ranked #1 | Returns "I don't have enough information to answer this reliably" | User trust |
+| **Customer Support** | Gives wrong policy information confidently, customer acts on it | Escalates to human agent when uncertain | Legal liability |
+| **Scientific Research** | Summarizes papers with fabricated statistics | Indicates "I'm uncertain about these specific numbers" | Research integrity |
+| **Content Moderation** | Confidently flags safe content or misses harmful content | Reports confidence level, routes low-confidence cases to human review | Platform safety |
 
 ### The Calibration Gap
 
-Research shows that state-of-the-art LLMs have an **Expected Calibration Error (ECE) of 15-30%** — meaning their expressed confidence is misaligned with actual accuracy by up to 30 percentage points. Our environment directly targets this gap.
+Research shows that state-of-the-art LLMs have an **Expected Calibration Error (ECE) of 15-30%** — meaning their expressed confidence is misaligned with actual accuracy by up to 30 percentage points. This isn't a minor issue — it's the difference between a useful AI assistant and a liability.
+
+### Why RL Is The Right Approach
+
+Previous approaches to reducing hallucination — RLHF, DPO, retrieval augmentation — focus on making the model's *answers* better. But they don't teach the model to *know when it's wrong*. That's a fundamentally different skill.
+
+Our environment treats calibration as a **learnable behavior** through reinforcement learning:
+- The model gets direct reward signal for honest uncertainty
+- The asymmetric penalty structure makes hallucination the worst possible outcome
+- The adaptive penalty creates a "trust mechanism" — repeated overconfidence gets punished harder
+- Over training, the model learns to map its internal uncertainty to expressed confidence
+
+This is the same principle behind how humans develop expertise: not just knowing more, but developing better intuition for *what they don't know*.
+
+### Who Benefits
+
+- **RL Researchers** — A ready-made environment for training calibrated LLMs with any RL framework (TRL, torchforge, Unsloth, SkyRL)
+- **AI Safety Teams** — Benchmark and measure hallucination rates before deployment
+- **Enterprise AI Teams** — Test whether their fine-tuned models know their limits
+- **Academic Researchers** — Study the relationship between model size, training data, and calibration quality
 
 ---
 
