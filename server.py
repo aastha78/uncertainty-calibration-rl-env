@@ -1,7 +1,7 @@
 """FastAPI server for the Uncertainty Calibration Environment."""
 
 import os
-from dataclasses import asdict
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -44,7 +44,7 @@ def health():
 def reset(req: ResetRequest = ResetRequest()):
     try:
         obs = env.reset(task_id=req.task_id)
-        return asdict(obs)
+        return obs.model_dump()
     except KeyError:
         raise HTTPException(status_code=400, detail=f"Unknown task: {req.task_id}. Use: task1_facts, task2_partial, task3_traps")
 
@@ -59,14 +59,14 @@ def step(req: StepRequest):
             uncertainty_type=req.uncertainty_type,
         )
         obs = env.step(action)
-        return asdict(obs)
+        return obs.model_dump()
     except RuntimeError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
 
 @app.get("/state")
 def state():
-    return asdict(env.state)
+    return env.state.model_dump()
 
 
 @app.get("/tasks")

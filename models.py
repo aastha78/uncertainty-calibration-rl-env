@@ -1,40 +1,37 @@
-"""Type-safe models for the Uncertainty Calibration Environment."""
+"""Type-safe Pydantic models for the Uncertainty Calibration Environment."""
 
-from dataclasses import dataclass, field
-from typing import List, Optional, Dict, Any
+from pydantic import BaseModel, Field
+from typing import List
 
 
-@dataclass
-class UncertaintyAction:
+class UncertaintyAction(BaseModel):
     """What the agent sends each step."""
-    answer: str                    # The agent's answer to the question
-    confidence: float              # 0.0 to 1.0 — how confident the agent is
-    uncertainty_type: str = "none" # none | partial | full | outdated | contested
+    answer: str
+    confidence: float = Field(ge=0.0, le=1.0)
+    uncertainty_type: str = "none"
 
 
-@dataclass
-class UncertaintyObservation:
+class UncertaintyObservation(BaseModel):
     """What the environment returns after each step."""
-    question: str                          # Current/next question
-    question_category: str                 # Category hint: factual, temporal, contested, etc.
-    is_correct: bool                       # Was the agent's answer correct?
-    expected_confidence_range: List[float] # [low, high] — ideal confidence range (revealed after grading)
-    ground_truth: str                      # Correct answer (revealed after grading)
-    knowledge_category: str                # KNOWN / PARTIAL / UNKNOWN / OUTDATED / CONTESTED
-    reward: float                          # 0.0 to 1.0
-    done: bool                             # Is the episode over?
+    question: str
+    question_category: str
+    is_correct: bool
+    expected_confidence_range: List[float]
+    ground_truth: str
+    knowledge_category: str
+    reward: float
+    done: bool
     step_number: int
     total_steps: int
-    feedback: str                          # Human-readable feedback
-    confidence_history: List[float] = field(default_factory=list)  # Past confidence scores
-    accuracy_history: List[bool] = field(default_factory=list)     # Past correctness
+    feedback: str
+    confidence_history: List[float] = []
+    accuracy_history: List[bool] = []
 
 
-@dataclass
-class UncertaintyState:
+class UncertaintyState(BaseModel):
     """Episode metadata."""
     episode_id: str
-    task_id: str                   # task1_facts / task2_partial / task3_traps
+    task_id: str
     step_count: int = 0
     total_steps: int = 0
     cumulative_reward: float = 0.0
@@ -43,8 +40,7 @@ class UncertaintyState:
     questions_total: int = 0
 
 
-@dataclass
-class TaskConfig:
+class TaskConfig(BaseModel):
     """Configuration for a task."""
     task_id: str
     name: str
