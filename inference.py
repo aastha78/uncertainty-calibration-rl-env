@@ -52,6 +52,7 @@ def run_task(task_id: str):
     rewards = []
     steps_taken = 0
     success = False
+    score = 0.0
 
     print(f"[START] task={task_id} env=uncertainty-calibration model={MODEL_NAME}", flush=True)
 
