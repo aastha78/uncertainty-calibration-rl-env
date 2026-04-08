@@ -1,0 +1,60 @@
+[
+  {
+    "question": "Who is the current President of the United States?",
+    "ground_truth": "This changes over time \u2014 answer depends on current date",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "accept_answers": [],
+    "category": "freshqa"
+  },
+  {
+    "question": "What is the latest version of Python?",
+    "ground_truth": "This changes frequently",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.2,
+      0.5
+    ],
+    "accept_answers": [],
+    "category": "freshqa"
+  },
+  {
+    "question": "How many subscribers does the most popular YouTube channel have?",
+    "ground_truth": "This changes daily",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.1,
+      0.4
+    ],
+    "accept_answers": [],
+    "category": "freshqa"
+  },
+  {
+    "question": "What is the current world population?",
+    "ground_truth": "Approximately 8 billion but changes constantly",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "accept_answers": [
+      "8 billion",
+      "about 8 billion"
+    ],
+    "category": "freshqa"
+  },
+  {
+    "question": "What is the latest iPhone model?",
+    "ground_truth": "This changes yearly",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.2,
+      0.5
+    ],
+    "accept_answers": [],
+    "category": "freshqa"
+  }
+]

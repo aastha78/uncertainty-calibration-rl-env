@@ -1,0 +1,151 @@
+[
+  {
+    "question": "What is the chemical formula for table salt?",
+    "ground_truth": "NaCl",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "accept_answers": [
+      "nacl"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "ground_truth": "Leonardo da Vinci",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "accept_answers": [
+      "leonardo da vinci",
+      "da vinci"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What is the tallest mountain in the world?",
+    "ground_truth": "Mount Everest",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "accept_answers": [
+      "everest",
+      "mount everest"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What is the speed of sound in air at sea level?",
+    "ground_truth": "Approximately 343 m/s",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.7,
+      0.9
+    ],
+    "accept_answers": [
+      "343",
+      "about 343",
+      "340"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "ground_truth": "Mitochondria",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "accept_answers": [
+      "mitochondria"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What will the stock market do next Tuesday?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What is my neighbor thinking right now?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot know"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "How many ants are alive on Earth at this exact moment?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.15
+    ],
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot determine"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What will be the most popular baby name in 2035?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ],
+    "category": "selfaware"
+  },
+  {
+    "question": "What is the meaning of life?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.0,
+      0.2
+    ],
+    "accept_answers": [
+      "subjective",
+      "no definitive answer",
+      "contested",
+      "i don't know"
+    ],
+    "category": "selfaware"
+  }
+]

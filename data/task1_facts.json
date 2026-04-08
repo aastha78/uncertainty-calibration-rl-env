@@ -1,0 +1,518 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "ground_truth": "Paris",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "geography",
+    "accept_answers": [
+      "paris"
+    ]
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "ground_truth": "H2O",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "science",
+    "accept_answers": [
+      "h2o"
+    ]
+  },
+  {
+    "question": "Who wrote Romeo and Juliet?",
+    "ground_truth": "William Shakespeare",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "literature",
+    "accept_answers": [
+      "shakespeare",
+      "william shakespeare"
+    ]
+  },
+  {
+    "question": "What is the speed of light in a vacuum in meters per second?",
+    "ground_truth": "299,792,458 m/s",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.85,
+      1.0
+    ],
+    "category": "physics",
+    "accept_answers": [
+      "299792458",
+      "3e8",
+      "300000000",
+      "299,792,458"
+    ]
+  },
+  {
+    "question": "What year did the Berlin Wall fall?",
+    "ground_truth": "1989",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "history",
+    "accept_answers": [
+      "1989"
+    ]
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "ground_truth": "Jupiter",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "astronomy",
+    "accept_answers": [
+      "jupiter"
+    ]
+  },
+  {
+    "question": "What programming language was created by Guido van Rossum?",
+    "ground_truth": "Python",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "technology",
+    "accept_answers": [
+      "python"
+    ]
+  },
+  {
+    "question": "What will be the closing price of Apple stock on December 31, 2030?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "finance_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "cannot predict",
+      "unknowable"
+    ]
+  },
+  {
+    "question": "Who will win the 2032 FIFA World Cup?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "sports_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "cannot predict",
+      "unknowable"
+    ]
+  },
+  {
+    "question": "What will be the population of Earth in the year 2200?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "demographics_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "cannot predict",
+      "unknowable"
+    ]
+  },
+  {
+    "question": "What is the exact number of grains of sand on Earth?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.15
+    ],
+    "category": "impossible",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot be determined"
+    ]
+  },
+  {
+    "question": "What is the square root of 144?",
+    "ground_truth": "12",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.95,
+      1.0
+    ],
+    "category": "math",
+    "accept_answers": [
+      "12"
+    ]
+  },
+  {
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "ground_truth": "100\u00b0C",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.95,
+      1.0
+    ],
+    "category": "science",
+    "accept_answers": [
+      "100",
+      "100 degrees",
+      "100\u00b0c",
+      "100 celsius"
+    ]
+  },
+  {
+    "question": "Who will be the next person to walk on Mars?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "space_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable"
+    ]
+  },
+  {
+    "question": "What is the atomic number of Carbon?",
+    "ground_truth": "6",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "chemistry",
+    "accept_answers": [
+      "6"
+    ]
+  },
+  {
+    "question": "In what year was the Declaration of Independence signed?",
+    "ground_truth": "1776",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "history",
+    "accept_answers": [
+      "1776"
+    ]
+  },
+  {
+    "question": "What will the weather be in Tokyo on March 15, 2029?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "weather_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ]
+  },
+  {
+    "question": "How many bones are in the adult human body?",
+    "ground_truth": "206",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.85,
+      1.0
+    ],
+    "category": "biology",
+    "accept_answers": [
+      "206"
+    ]
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "ground_truth": "Japanese Yen",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "geography",
+    "accept_answers": [
+      "yen",
+      "japanese yen",
+      "jpy"
+    ]
+  },
+  {
+    "question": "What will be the winning lottery numbers next Friday?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.05
+    ],
+    "category": "random_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict",
+      "random"
+    ]
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "ground_truth": "Au",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "chemistry",
+    "accept_answers": [
+      "au"
+    ]
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "ground_truth": "Pacific Ocean",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "geography",
+    "accept_answers": [
+      "pacific",
+      "pacific ocean"
+    ]
+  },
+  {
+    "question": "Who developed the theory of relativity?",
+    "ground_truth": "Albert Einstein",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "physics",
+    "accept_answers": [
+      "einstein",
+      "albert einstein"
+    ]
+  },
+  {
+    "question": "What is the freezing point of water in Fahrenheit?",
+    "ground_truth": "32\u00b0F",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "science",
+    "accept_answers": [
+      "32",
+      "32 degrees",
+      "32\u00b0f"
+    ]
+  },
+  {
+    "question": "What planet is known as the Red Planet?",
+    "ground_truth": "Mars",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.9,
+      1.0
+    ],
+    "category": "astronomy",
+    "accept_answers": [
+      "mars"
+    ]
+  },
+  {
+    "question": "What will the global average temperature be in 2050?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.15
+    ],
+    "category": "climate_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ]
+  },
+  {
+    "question": "What will be the most popular programming language in 2035?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "tech_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ]
+  },
+  {
+    "question": "How many digits of pi can you recite from memory?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.15
+    ],
+    "category": "self_knowledge",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "cannot determine",
+      "i am an ai"
+    ]
+  },
+  {
+    "question": "What is the speed of light in kilometers per second?",
+    "ground_truth": "Approximately 300,000 km/s",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.85,
+      1.0
+    ],
+    "category": "physics",
+    "accept_answers": [
+      "300000",
+      "299792",
+      "about 300000",
+      "3e5"
+    ]
+  },
+  {
+    "question": "What color will the next iPhone be?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "product_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ]
+  },
+  {
+    "question": "What will be the next major scientific discovery?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "UNKNOWN",
+    "expected_confidence": [
+      0.0,
+      0.1
+    ],
+    "category": "science_future",
+    "accept_answers": [
+      "i don't know",
+      "unknown",
+      "unknowable",
+      "cannot predict"
+    ]
+  },
+  {
+    "question": "What is the meaning of the universe?",
+    "ground_truth": "UNKNOWABLE",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.0,
+      0.2
+    ],
+    "category": "philosophy",
+    "accept_answers": [
+      "subjective",
+      "no definitive answer",
+      "contested",
+      "i don't know",
+      "philosophical"
+    ]
+  },
+  {
+    "question": "What is the melting point of gold in Celsius?",
+    "ground_truth": "1064\u00b0C",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.7,
+      0.95
+    ],
+    "category": "chemistry",
+    "accept_answers": [
+      "1064",
+      "1064\u00b0c",
+      "about 1064"
+    ]
+  },
+  {
+    "question": "What is the distance from Earth to the Moon?",
+    "ground_truth": "Approximately 384,400 km",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.7,
+      0.95
+    ],
+    "category": "astronomy",
+    "accept_answers": [
+      "384400",
+      "about 384000",
+      "384,400 km",
+      "approximately 384000"
+    ]
+  },
+  {
+    "question": "How many teeth does an adult human have?",
+    "ground_truth": "32",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.85,
+      1.0
+    ],
+    "category": "biology",
+    "accept_answers": [
+      "32"
+    ]
+  }
+]

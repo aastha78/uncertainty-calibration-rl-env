@@ -1,0 +1,653 @@
+[
+  {
+    "question": "What is the population of Iceland?",
+    "ground_truth": "Approximately 380,000 (as of 2024)",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.4,
+      0.7
+    ],
+    "category": "demographics",
+    "accept_answers": [
+      "370000",
+      "375000",
+      "380000",
+      "385000",
+      "390000",
+      "about 380000",
+      "around 370000",
+      "approximately 380000"
+    ]
+  },
+  {
+    "question": "Is coffee good or bad for your health?",
+    "ground_truth": "Research is mixed \u2014 moderate consumption (3-4 cups/day) is associated with health benefits in most studies, but excessive consumption can cause issues. Individual responses vary.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.3,
+      0.5
+    ],
+    "category": "health",
+    "accept_answers": [
+      "mixed",
+      "depends",
+      "both",
+      "moderate consumption is generally beneficial",
+      "research is mixed"
+    ]
+  },
+  {
+    "question": "What was the inflation rate in the United States in March 2024?",
+    "ground_truth": "3.5% (CPI year-over-year)",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "economics",
+    "accept_answers": [
+      "3.5",
+      "3.5%",
+      "about 3.5%",
+      "around 3-4%"
+    ]
+  },
+  {
+    "question": "How many species of beetles exist on Earth?",
+    "ground_truth": "Approximately 400,000 known species, estimated 1 million+ total",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "biology",
+    "accept_answers": [
+      "400000",
+      "about 400000",
+      "around 350000",
+      "350000-400000",
+      "hundreds of thousands"
+    ]
+  },
+  {
+    "question": "Does intermittent fasting help with weight loss?",
+    "ground_truth": "Most studies show it can be effective for weight loss, but it's not clearly superior to continuous calorie restriction. Results vary by individual.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.3,
+      0.55
+    ],
+    "category": "health",
+    "accept_answers": [
+      "it can help",
+      "evidence suggests yes but not superior to other methods",
+      "mixed results",
+      "generally yes but varies"
+    ]
+  },
+  {
+    "question": "What is the exact distance from Earth to the Andromeda Galaxy?",
+    "ground_truth": "Approximately 2.537 million light-years, but measurements have uncertainty ranges",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.4,
+      0.65
+    ],
+    "category": "astronomy",
+    "accept_answers": [
+      "2.5 million light years",
+      "about 2.5 million light-years",
+      "2.537 million light-years",
+      "approximately 2.5 million"
+    ]
+  },
+  {
+    "question": "What percentage of the ocean floor has been mapped in detail?",
+    "ground_truth": "Approximately 25-26% as of 2024",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.25,
+      0.55
+    ],
+    "category": "science",
+    "accept_answers": [
+      "about 25%",
+      "around 20-25%",
+      "25%",
+      "less than 30%",
+      "approximately 25%"
+    ]
+  },
+  {
+    "question": "Is red wine good for heart health?",
+    "ground_truth": "Earlier studies suggested benefits from resveratrol, but more recent large-scale studies question whether any amount of alcohol is beneficial. The scientific consensus has shifted toward skepticism.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.2,
+      0.45
+    ],
+    "category": "health",
+    "accept_answers": [
+      "contested",
+      "mixed evidence",
+      "earlier studies said yes but newer research is skeptical",
+      "probably not",
+      "unclear"
+    ]
+  },
+  {
+    "question": "How many languages are spoken in the world today?",
+    "ground_truth": "Approximately 7,000, though the exact number depends on the distinction between languages and dialects",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.5,
+      0.75
+    ],
+    "category": "linguistics",
+    "accept_answers": [
+      "about 7000",
+      "around 7000",
+      "7000",
+      "6000-7000",
+      "approximately 7000"
+    ]
+  },
+  {
+    "question": "What was the GDP of Nigeria in 2023?",
+    "ground_truth": "Approximately $363 billion (nominal)",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.2,
+      0.5
+    ],
+    "category": "economics",
+    "accept_answers": [
+      "about 360 billion",
+      "around 363 billion",
+      "approximately 350-400 billion"
+    ]
+  },
+  {
+    "question": "Do violent video games cause real-world violence?",
+    "ground_truth": "The scientific consensus is that there is no strong causal link between violent video games and real-world violence, though some studies show short-term increases in aggression.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.3,
+      0.55
+    ],
+    "category": "psychology",
+    "accept_answers": [
+      "no strong causal link",
+      "probably not",
+      "contested",
+      "no clear evidence",
+      "mixed but mostly no"
+    ]
+  },
+  {
+    "question": "What is the current world record for the 100m sprint?",
+    "ground_truth": "9.58 seconds by Usain Bolt (2009)",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.5,
+      0.8
+    ],
+    "category": "sports",
+    "accept_answers": [
+      "9.58",
+      "9.58 seconds",
+      "usain bolt 9.58"
+    ]
+  },
+  {
+    "question": "How much of human DNA is shared with bananas?",
+    "ground_truth": "Approximately 60% of genes are shared, though this is often misrepresented",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "genetics",
+    "accept_answers": [
+      "about 60%",
+      "around 60%",
+      "50-60%",
+      "approximately 60%"
+    ]
+  },
+  {
+    "question": "Is Pluto a planet?",
+    "ground_truth": "No, Pluto was reclassified as a dwarf planet by the IAU in 2006, though this remains debated by some astronomers",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.6,
+      0.85
+    ],
+    "category": "astronomy",
+    "accept_answers": [
+      "no",
+      "dwarf planet",
+      "no, it's a dwarf planet",
+      "reclassified as dwarf planet in 2006"
+    ]
+  },
+  {
+    "question": "What is the current unemployment rate in Germany?",
+    "ground_truth": "Approximately 5.7-6.0% (2024 estimates)",
+    "knowledge_category": "OUTDATED",
+    "expected_confidence": [
+      0.2,
+      0.5
+    ],
+    "category": "economics",
+    "accept_answers": [
+      "about 5-6%",
+      "around 5.7%",
+      "approximately 6%",
+      "5-6%"
+    ]
+  },
+  {
+    "question": "Does screen time before bed affect sleep quality?",
+    "ground_truth": "Most research suggests blue light from screens can suppress melatonin and delay sleep onset, but the magnitude of the effect is debated and may depend on content type and individual factors.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.5,
+      0.75
+    ],
+    "category": "health",
+    "accept_answers": [
+      "yes generally",
+      "probably yes",
+      "evidence suggests yes but debated",
+      "blue light can affect sleep"
+    ]
+  },
+  {
+    "question": "How many trees are there on Earth?",
+    "ground_truth": "Approximately 3 trillion, based on a 2015 Nature study",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "ecology",
+    "accept_answers": [
+      "about 3 trillion",
+      "3 trillion",
+      "approximately 3 trillion"
+    ]
+  },
+  {
+    "question": "What is the deepest point in the ocean?",
+    "ground_truth": "Challenger Deep in the Mariana Trench, approximately 10,935 meters (35,876 feet)",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.8,
+      1.0
+    ],
+    "category": "geography",
+    "accept_answers": [
+      "challenger deep",
+      "mariana trench",
+      "about 11000 meters",
+      "10935 meters"
+    ]
+  },
+  {
+    "question": "Are organic foods healthier than conventional foods?",
+    "ground_truth": "Evidence is mixed. Organic foods have lower pesticide residues but nutritional differences are minimal according to most meta-analyses.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.25,
+      0.5
+    ],
+    "category": "nutrition",
+    "accept_answers": [
+      "mixed evidence",
+      "not clearly",
+      "minimal nutritional difference",
+      "contested",
+      "lower pesticides but similar nutrition"
+    ]
+  },
+  {
+    "question": "What was the average global temperature increase in 2023 compared to pre-industrial levels?",
+    "ground_truth": "Approximately 1.45\u00b0C above the 1850-1900 average",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "climate",
+    "accept_answers": [
+      "about 1.45 degrees",
+      "approximately 1.4-1.5 degrees",
+      "around 1.5 degrees"
+    ]
+  },
+  {
+    "question": "What is the average lifespan of a domestic cat?",
+    "ground_truth": "Approximately 12-18 years, depending on breed and care",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.5,
+      0.75
+    ],
+    "category": "biology",
+    "accept_answers": [
+      "12-18",
+      "15",
+      "about 15",
+      "12 to 18",
+      "around 15"
+    ]
+  },
+  {
+    "question": "How much of the Amazon rainforest has been deforested?",
+    "ground_truth": "Approximately 17-20% as of recent estimates",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.55
+    ],
+    "category": "ecology",
+    "accept_answers": [
+      "17%",
+      "20%",
+      "about 17-20%",
+      "around 20%"
+    ]
+  },
+  {
+    "question": "Does listening to Mozart make babies smarter?",
+    "ground_truth": "The Mozart Effect has been largely debunked. The original study showed a small, temporary improvement in spatial reasoning in college students, not babies.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.3,
+      0.55
+    ],
+    "category": "psychology",
+    "accept_answers": [
+      "no",
+      "debunked",
+      "no strong evidence",
+      "mozart effect is debunked",
+      "not proven"
+    ]
+  },
+  {
+    "question": "What percentage of the human body is water?",
+    "ground_truth": "Approximately 60% for adult males, varies by age and sex",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.6,
+      0.85
+    ],
+    "category": "biology",
+    "accept_answers": [
+      "60%",
+      "about 60%",
+      "around 60%",
+      "55-65%"
+    ]
+  },
+  {
+    "question": "Is breakfast really the most important meal of the day?",
+    "ground_truth": "This claim is not strongly supported by evidence. It originated partly from cereal company marketing. Meal timing effects vary by individual.",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.25,
+      0.5
+    ],
+    "category": "nutrition",
+    "accept_answers": [
+      "not necessarily",
+      "debatable",
+      "no strong evidence",
+      "contested",
+      "marketing claim"
+    ]
+  },
+  {
+    "question": "How many galaxies are there in the observable universe?",
+    "ground_truth": "Estimated 200 billion to 2 trillion, depending on the study",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "astronomy",
+    "accept_answers": [
+      "200 billion",
+      "2 trillion",
+      "billions",
+      "hundreds of billions"
+    ]
+  },
+  {
+    "question": "Does cracking your knuckles cause arthritis?",
+    "ground_truth": "No. Multiple studies have found no link between knuckle cracking and arthritis.",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.6,
+      0.85
+    ],
+    "category": "health",
+    "accept_answers": [
+      "no",
+      "no link",
+      "does not cause arthritis",
+      "myth"
+    ]
+  },
+  {
+    "question": "What is the current global literacy rate?",
+    "ground_truth": "Approximately 87% as of recent UNESCO estimates",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.55
+    ],
+    "category": "demographics",
+    "accept_answers": [
+      "87%",
+      "about 87%",
+      "around 85-90%",
+      "approximately 87%"
+    ]
+  },
+  {
+    "question": "Do we really swallow 8 spiders a year in our sleep?",
+    "ground_truth": "This is a myth. Spiders avoid sleeping humans due to vibrations from breathing and heartbeat.",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.6,
+      0.9
+    ],
+    "category": "misconception",
+    "accept_answers": [
+      "no",
+      "myth",
+      "false",
+      "not true",
+      "this is a myth"
+    ]
+  },
+  {
+    "question": "What percentage of Earth's water is freshwater?",
+    "ground_truth": "Approximately 2.5-3% of Earth's water is freshwater",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.4,
+      0.7
+    ],
+    "category": "geography",
+    "accept_answers": [
+      "2.5%",
+      "3%",
+      "about 3%",
+      "around 2.5-3%"
+    ]
+  },
+  {
+    "question": "What was the exact GDP growth rate of India in Q2 2024?",
+    "ground_truth": "Approximately 6.7% (varies by source)",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.2,
+      0.5
+    ],
+    "category": "economics_precise",
+    "accept_answers": [
+      "6.7",
+      "about 6-7%",
+      "around 6.7%"
+    ]
+  },
+  {
+    "question": "How many active volcanoes are there on Earth right now?",
+    "ground_truth": "Approximately 1,350 potentially active, about 500 have erupted in recorded history",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.55
+    ],
+    "category": "geology",
+    "accept_answers": [
+      "1350",
+      "about 1350",
+      "around 1500",
+      "500"
+    ]
+  },
+  {
+    "question": "What is the exact melting point of iron in Celsius?",
+    "ground_truth": "1538\u00b0C",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.5,
+      0.8
+    ],
+    "category": "chemistry_precise",
+    "accept_answers": [
+      "1538",
+      "1538\u00b0c",
+      "about 1538",
+      "around 1540"
+    ]
+  },
+  {
+    "question": "How many words are in the English language?",
+    "ground_truth": "Estimates range from 170,000 to over 1 million depending on what counts as a word",
+    "knowledge_category": "CONTESTED",
+    "expected_confidence": [
+      0.2,
+      0.45
+    ],
+    "category": "linguistics",
+    "accept_answers": [
+      "depends",
+      "varies",
+      "hundreds of thousands",
+      "about 170000",
+      "over a million"
+    ]
+  },
+  {
+    "question": "What is the half-life of Uranium-238?",
+    "ground_truth": "Approximately 4.468 billion years",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.5,
+      0.8
+    ],
+    "category": "physics_precise",
+    "accept_answers": [
+      "4.468 billion",
+      "4.5 billion",
+      "about 4.5 billion years"
+    ]
+  },
+  {
+    "question": "What is the average depth of the Pacific Ocean?",
+    "ground_truth": "Approximately 4,280 meters (14,040 feet)",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "geography",
+    "accept_answers": [
+      "4280",
+      "about 4000",
+      "approximately 4280",
+      "4000-4500"
+    ]
+  },
+  {
+    "question": "How many species of sharks exist?",
+    "ground_truth": "Over 500 known species",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.3,
+      0.6
+    ],
+    "category": "biology",
+    "accept_answers": [
+      "500",
+      "over 500",
+      "about 500",
+      "more than 400"
+    ]
+  },
+  {
+    "question": "Is chocolate toxic to dogs?",
+    "ground_truth": "Yes, chocolate contains theobromine which is toxic to dogs. Dark chocolate is more dangerous than milk chocolate.",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.7,
+      0.95
+    ],
+    "category": "veterinary",
+    "accept_answers": [
+      "yes",
+      "toxic",
+      "theobromine",
+      "dangerous"
+    ]
+  },
+  {
+    "question": "What percentage of the human genome is shared with chimpanzees?",
+    "ground_truth": "Approximately 98.7% of DNA is shared",
+    "knowledge_category": "PARTIAL",
+    "expected_confidence": [
+      0.5,
+      0.8
+    ],
+    "category": "genetics",
+    "accept_answers": [
+      "98",
+      "98.7",
+      "about 98%",
+      "98-99%"
+    ]
+  },
+  {
+    "question": "Does reading in dim light damage your eyes?",
+    "ground_truth": "No. Reading in dim light can cause eye strain and fatigue but does not cause permanent damage.",
+    "knowledge_category": "KNOWN",
+    "expected_confidence": [
+      0.6,
+      0.85
+    ],
+    "category": "health",
+    "accept_answers": [
+      "no",
+      "does not damage",
+      "eye strain only",
+      "no permanent damage",
+      "myth"
+    ]
+  }
+]
